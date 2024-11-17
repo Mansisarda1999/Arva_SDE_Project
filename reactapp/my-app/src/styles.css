@@ -1,0 +1,131 @@
+/* styles.css */
+
+/* Page Container */
+/* Ant Design Header Styles */
+
+  
+  /* Content Padding */
+  .ant-layout-content {
+    margin: 20px auto;
+    max-width: 1200px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+.App {
+    margin: 20px auto;
+    max-width: 1200px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Add New Record Button */
+  button.ant-btn-primary {
+    background-color: #1fa635;
+    border-color: #1fa635;
+    color: white;
+    font-weight: bold;
+  }
+  
+  button.ant-btn-primary:hover {
+    background-color: #109536;
+    border-color: #109536;
+  }
+  
+  /* Table Styling */
+  .ant-table {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .ant-table-thead > tr > th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .ant-table-tbody > tr > td {
+    font-size: 14px;
+  }
+  
+  /* Edit and Delete Buttons */
+  button {
+    margin-right: 8px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  button:first-child {
+    background-color: #1fa635;
+    border: 1px solid #1fa635;
+    color: white;
+  }
+  
+  button:first-child:hover {
+    background-color: #109536;
+    border-color: #109536;
+  }
+  
+  button:last-child {
+    background-color: #565555;
+    border: 1px solid #565555;
+    color: white;
+  }
+  
+  button:last-child:hover {
+    background-color: #1e1c1c;
+    border-color: #1e1c1c;
+  }
+  
+  /* Modal Form */
+  .ant-modal {
+    border-radius: 8px;
+  }
+  
+  .ant-modal-header {
+    background-color: #1fa635;
+    color: white;
+  }
+  
+  .ant-modal-title {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .ant-modal-footer button {
+    font-weight: bold;
+  }
+  
+
+  .header {
+    background-color: #1fa635;
+    color: 1fa635;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .header-content {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and text */
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+  }
+
+  button.ant-btn-primary:hover {
+    background-color: #109536;
+    border-color: #109536;
+  }
+
+  .logo {
+    height: 40px; /* Adjust as needed */
+    width: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Optional: Adds rounded corners */
+  }

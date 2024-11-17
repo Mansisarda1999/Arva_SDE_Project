@@ -25,16 +25,17 @@ def demofieldApi(request,id=0):
         return JsonResponse("Failed to Add",safe=False)
     elif request.method=='PUT':
         demo_field_data=JSONParser().parse(request)
-        dfield=demo_field.objects.get(field_name=demo_field_data['field_name'])
+        dfield=demo_field.objects.get(id=demo_field_data['id'])
         demo_fieldSerializer=demofieldSerializer(dfield,data=demo_field_data)
         if demo_fieldSerializer.is_valid():
             demo_fieldSerializer.save()
             return JsonResponse("Updated Successfully",safe=False)
         return JsonResponse("Failed to Update")
     elif request.method=='DELETE':
-        demofield=demo_field.objects.get(field_name=id)
+        demofield=demo_field.objects.get(id=id)
         demofield.delete()
         return JsonResponse("Deleted Successfully",safe=False)
+    
 
 
 @csrf_exempt

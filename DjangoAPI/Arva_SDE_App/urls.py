@@ -6,7 +6,7 @@ from django.conf import settings
 
 urlpatterns = [
     # Endpoint to handle all demofield requests
-    path('demofield', views.demofieldApi),  # Matches /demofield
-    re_path(r'^demofield/([a-z A-Z]+)$', views.demofieldApi),  # Matches /demofield/<id>
+    path('demo_field', views.demofieldApi),  # Matches /demofield
+    re_path(r'^demo_field/([a-z A-Z0-9]+)$', views.demofieldApi),  # Matches /demofield/<id>
 ] 
 # + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -4,7 +4,8 @@ from Arva_SDE_App.models import demo_field
 class demofieldSerializer(serializers.ModelSerializer):
     class Meta:
         model = demo_field
-        fields = ('field_name', 
+        fields = ('id',
+            'field_name', 
                 'acreage', 
                 'owner_name', 
                 'location', 
